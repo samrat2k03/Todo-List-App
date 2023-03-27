@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;
+  }
+
+  .header_todo_App{
+    /* border: 1px solid salmon; */
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .header_todo_App >h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+
+  .header_todo_App >p{
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .body_content{
+    /* border: 1px solid salmon; */
+    margin-top: 10px;
+  }
+  .add_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left:120px;
+    margin-right: 60px;
+  }
+  
+  #input-submit {
+    flex-grow: 1;
+    height: 50px;
+    width: 400px;
+    font-size: 16px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline-width: 0;
+  }
+  
+  #btn-1 {
+    height: 50px;
+    width: 80px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .result_show_section {
+    padding: 10px;
+    background-color: #b4b1b1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-right: 20px;
+
+  }
+  
+  #result {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  li {
+    padding: 15px 10px 10px 10px; 
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  #clear-btn {
+    margin-top: 30px;
+    height: 40px;
+    width: 80px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 350px;
+  }
+
+#tick,#wrong{
+  height: 30px;
+  width: 30px;
+  float: right;
+  margin-left: 10px;
+  background-color: #b4b1b1;
+  outline-width: 0;
+  border: 0;
+  border-radius: 10px;
+  border-color: white;
+  background-color: #ccc;
+}
+
+#tick:active,#wrong:active {
+  background-color: #4CAF50;
+}
+
+#completed{
+  text-decoration: line-through;
+  padding: 15px 10px 10px 10px; 
+  background-color: #f2f2f2;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+}
